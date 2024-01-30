@@ -1,10 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import AppLayout from '../ui/AppLayout';
-import Projects from '../pages/Projects';
-import Education from '../pages/Education';
-import Contact from '../pages/Contact';
-import PageNotFound from '../pages/PageNotFound';
-import Homepage from '../pages/Homepage';
+import AppLayout from './ui/AppLayout';
+import Projects from './pages/Projects';
+import Education from './pages/Education';
+import Contact from './pages/Contact';
+import PageNotFound from './pages/PageNotFound';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
