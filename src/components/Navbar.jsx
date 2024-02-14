@@ -1,13 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import { IoIosMenu } from 'react-icons/io';
 import { IoIosClose } from 'react-icons/io';
+import { FaGithub } from 'react-icons/fa';
 import { useState } from 'react';
 function Navbar() {
   const navLink =
-    'rounded  px-3 py-2 transition ease-in duration-2000 text-black hover:text-white sm:text-xl text-lg';
+    'rounded  px-3 py-2 transition ease-in duration-2000 text-white hover:text-primary text-lg ';
   const activeClass = navLink.replace(
-    'text-black',
-    'text-white underline underline-offset-4',
+    'text-white',
+    'text-primary underline underline-offset-4',
   );
   const [isOpen, setIsOpen] = useState(false);
   function toggleMenu() {
@@ -15,15 +16,17 @@ function Navbar() {
   }
 
   return (
-    <nav className="m-5 flex justify-end ">
-      <div
-        className={`absolute right-16  flex min-h-[60vh] w-60 flex-col items-center gap-10 rounded-md border-2 border-white  bg-[#FF004D] shadow-xl sm:w-full  md:border-2 md:p-2  ${isOpen ? '' : 'top-[-100%]'}   md:static md:min-h-fit md:bg-transparent`}
-      >
-        <ul className="mt-5 flex flex-col items-center sm:mt-0 sm:w-full sm:flex-row sm:justify-between  sm:px-2  ">
-          <NavLink className="text-lg sm:text-xl" to="homepage">
-            LOGO
-          </NavLink>
-
+    <nav className="sticky top-0">
+      <div className="bg-background container  mx-auto flex  justify-end   sm:items-center sm:bg-transparent sm:px-4 sm:py-2 sm:backdrop-blur-md">
+        <NavLink
+          className="ml-5 mr-auto mt-2 text-lg  text-white sm:m-0 sm:text-xl"
+          to="homepage"
+        >
+          Portfolio
+        </NavLink>
+        <ul
+          className={`bg-background absolute m-auto h-80 transition-all duration-300  ease-in sm:h-fit sm:bg-transparent ${isOpen ? 'top-10 ' : ' top-[-500px]'} flex w-full  flex-col items-center gap-5  sm:static sm:m-0 sm:mt-0 sm:w-full sm:flex-row sm:justify-center  sm:px-2  `}
+        >
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="homepage"
@@ -51,28 +54,37 @@ function Navbar() {
           >
             Education
           </NavLink>
-
-          <NavLink className="text-lg sm:text-xl" to="education">
-            Github
+          <NavLink
+            to="https://github.com/rohitumadi"
+            className="block text-lg sm:ml-auto sm:hidden  sm:text-xl"
+            target="_blank"
+          >
+            <FaGithub size={40} className="text-white" />
           </NavLink>
         </ul>
+        <NavLink
+          to="https://github.com/rohitumadi"
+          className="hidden text-lg sm:ml-auto sm:block  sm:text-xl"
+          target="_blank"
+        >
+          <FaGithub size={40} className="text-white" />
+        </NavLink>
+        {isOpen ? (
+          <IoIosClose
+            color="#fff"
+            onClick={toggleMenu}
+            size={40}
+            className="mr-5 mt-2 cursor-pointer sm:m-0 sm:hidden "
+          />
+        ) : (
+          <IoIosMenu
+            fill="#fff"
+            size={40}
+            onClick={toggleMenu}
+            className="mr-5 mt-2 cursor-pointer sm:m-0 sm:hidden"
+          />
+        )}
       </div>
-
-      {isOpen ? (
-        <IoIosClose
-          color="#000"
-          onClick={toggleMenu}
-          size={50}
-          className="absolute top-8 cursor-pointer sm:hidden "
-        />
-      ) : (
-        <IoIosMenu
-          fill="#000"
-          size={40}
-          onClick={toggleMenu}
-          className="cursor-pointer sm:hidden"
-        />
-      )}
     </nav>
   );
 }
