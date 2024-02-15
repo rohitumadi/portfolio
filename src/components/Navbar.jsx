@@ -33,6 +33,12 @@ function Navbar() {
           >
             Home
           </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? activeClass : navLink)}
+            to="skills"
+          >
+            Skills
+          </NavLink>
 
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : navLink)}
@@ -50,16 +56,16 @@ function Navbar() {
 
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : navLink)}
-            to="education"
+            to="experience"
           >
-            Education
+            Experience
           </NavLink>
           <NavLink
             to="https://github.com/rohitumadi"
             className="block text-lg sm:ml-auto sm:hidden  sm:text-xl"
             target="_blank"
           >
-            <FaGithub size={40} className="text-white" />
+            <FaGithub size={40} className="text-white " />
           </NavLink>
         </ul>
         <NavLink
@@ -67,7 +73,7 @@ function Navbar() {
           className="hidden text-lg sm:ml-auto sm:block  sm:text-xl"
           target="_blank"
         >
-          <FaGithub size={40} className="text-white" />
+          <FaGithub size={40} className="text-white " />
         </NavLink>
         {isOpen ? (
           <IoIosClose

@@ -3,12 +3,12 @@ function Homepage() {
     <section className="m-5 mt-10">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-10 lg:gap-0  ">
         <div className="col-span-1 mt-5  justify-self-center  sm:order-last md:mt-0">
-          <div className=" border-primary flex h-[400px] w-[400px]  items-center justify-center rounded-full border-2 bg-transparent    ">
+          <div className=" border-primary flex h-[400px] w-[400px] items-center justify-center  rounded-full border-2 bg-transparent lg:h-[455px] lg:w-[450px]    ">
             <img
-              src="/Rohit_Umadi.png"
-              width={350}
-              height={350}
-              className=" rounded-full  lg:h-[350px] lg:w-[350px]"
+              src="/ru.png"
+              width={400}
+              height={400}
+              className=" rounded-full  lg:h-[450px] lg:w-[450px]"
             />
           </div>
         </div>
@@ -22,7 +22,7 @@ function Homepage() {
               with an experience in Fullstack engineering.
             </span>
           </p>
-          <button className="bg-primary w-full  rounded-lg px-6 py-3 font-semibold   text-white   sm:w-fit">
+          <button className="bg-primary w-full rounded-lg px-6  py-3 font-semibold text-white shadow-lg duration-500 hover:-translate-y-2   hover:shadow-white   sm:w-fit">
             Download CV
           </button>
         </div>
