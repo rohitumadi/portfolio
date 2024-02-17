@@ -1,18 +1,17 @@
 import Card from '../components/Card';
+import Heading from '../components/Heading';
 import { projects } from '../data/constants';
 function Projects() {
   return (
-    <div>
-      <h1 className="text-center text-3xl font-semibold text-white">
-        Projects
-      </h1>
+    <>
+      <Heading title="Projects" />
 
-      <div className="mt-8 grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid w-full grid-cols-1 justify-items-center  gap-y-7 md:grid-cols-2    lg:grid-cols-3 lg:gap-x-10 ">
         {projects.map((project) => (
           <Card projectData={project} key={project.id} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

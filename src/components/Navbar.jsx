@@ -14,26 +14,31 @@ function Navbar() {
   function toggleMenu() {
     setIsOpen((show) => !show);
   }
-
+  function handleCloseMenu() {
+    if (isOpen) setIsOpen(false);
+  }
   return (
     <nav className="sticky top-0">
       <div className="bg-background container  mx-auto flex  justify-end   sm:items-center sm:bg-transparent sm:px-4 sm:py-2 sm:backdrop-blur-md">
         <NavLink
+          onClick={handleCloseMenu}
           className="ml-5 mr-auto mt-2 text-lg  text-white sm:m-0 sm:text-xl"
           to="homepage"
         >
           Portfolio
         </NavLink>
         <ul
-          className={`bg-background absolute m-auto h-80 transition-all duration-300  ease-in sm:h-fit sm:bg-transparent ${isOpen ? 'top-10 ' : ' top-[-500px]'} flex w-full  flex-col items-center gap-5  sm:static sm:m-0 sm:mt-0 sm:w-full sm:flex-row sm:justify-center  sm:px-2  `}
+          className={`bg-background absolute m-auto h-fit transition-all duration-300  ease-in sm:h-fit sm:bg-transparent ${isOpen ? 'top-10 ' : ' top-[-500px]'} flex w-full  flex-col items-center gap-5  sm:static sm:m-0 sm:mt-0 sm:w-full sm:flex-row sm:justify-center  sm:px-2  `}
         >
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="homepage"
           >
             Home
           </NavLink>
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="skills"
           >
@@ -41,6 +46,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="projects"
           >
@@ -48,6 +54,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="contact"
           >
@@ -55,6 +62,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="experience"
           >

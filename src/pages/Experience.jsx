@@ -1,5 +1,11 @@
+import Heading from '../components/Heading';
+
 function Experience() {
-  return <div>Experience page</div>;
+  return (
+    <>
+      <Heading title="Experience" />
+    </>
+  );
 }
 
 export default Experience;
