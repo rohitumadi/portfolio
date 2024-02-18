@@ -4,9 +4,9 @@ import Navbar from '../components/Navbar';
 
 function AppLayout() {
   return (
-    <main className="flex min-h-screen flex-col  bg-[#191924]">
+    <main className="flex min-h-screen flex-col   bg-[#191924]">
       <Navbar />
-      <div className="container mx-auto ">
+      <div className="container mx-auto mt-5">
         <Outlet />
       </div>
     </main>

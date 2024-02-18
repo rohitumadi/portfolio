@@ -94,6 +94,10 @@ export const skills = [
     path: '/skills/java.svg',
   },
   {
+    skillName: 'spring boot',
+    path: '/skills/spring-boot.svg',
+  },
+  {
     skillName: 'github',
     path: '/skills/github.svg',
   },

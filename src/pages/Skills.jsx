@@ -5,8 +5,8 @@ function Skills() {
   return (
     <>
       <Heading title="Skills" />
-      <div className="grid  grid-cols-1 justify-items-center  ">
-        <div className="m-4 flex flex-wrap justify-around gap-4">
+      <div className="grid  grid-cols-1 justify-items-center   ">
+        <div className="m-4 flex flex-wrap justify-around gap-5">
           {skills.map((skill) => (
             <SkillItem
               width={100}
