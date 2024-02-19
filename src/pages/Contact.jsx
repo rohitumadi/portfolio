@@ -31,7 +31,7 @@ function Contact() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="shadow-primary border-primary  mt-6 flex h-3/4 w-4/5 flex-col items-center justify-center gap-5 rounded-md border p-5 text-white shadow-lg lg:w-1/3"
+          className="shadow-primary border-primary mt-6  flex h-3/4 w-4/5 flex-col items-center justify-center gap-5 rounded-md border bg-transparent p-5 text-white shadow-lg lg:w-1/3"
         >
           <div className="flex flex-col gap-2">
             <label htmlFor="name">Your name</label>

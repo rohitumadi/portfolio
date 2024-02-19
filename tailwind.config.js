@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -12,6 +11,17 @@ export default {
     fontFamily: {
       signature: ['"Great Vibes"'],
     },
+  },
+  daisyui: {
+    themes: [
+      {
+        dark: {
+          // eslint-disable-next-line no-undef
+          ...require('daisyui/src/theming/themes')['dark'],
+          primary: '#7743DB',
+        },
+      },
+    ],
   },
 
   // eslint-disable-next-line no-undef

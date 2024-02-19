@@ -60,73 +60,91 @@ export const skills = [
   {
     skillName: 'react',
     path: '/skills/react.svg',
+    level: '2',
   },
   {
     skillName: 'javascript',
     path: '/skills/javascript.svg',
+    level: '2',
   },
   {
     skillName: 'HTML',
     path: '/skills/html.svg',
+    level: '2',
   },
   {
     skillName: 'CSS',
     path: '/skills/css.svg',
+    level: '2',
   },
   {
     skillName: 'Tailwind CSS',
     path: '/skills/tailwind.svg',
+    level: '2',
   },
   {
     skillName: 'Redux',
     path: '/skills/redux.svg',
+    level: '1',
   },
   {
     skillName: 'Mongo DB',
     path: '/skills/mongodb.svg',
+    level: '2',
   },
   {
     skillName: 'python',
     path: '/skills/python.svg',
+    level: '1',
   },
   {
     skillName: 'java',
     path: '/skills/java.svg',
+    level: '0',
   },
   {
     skillName: 'spring boot',
     path: '/skills/spring-boot.svg',
+    level: '0',
   },
   {
     skillName: 'github',
     path: '/skills/github.svg',
+    level: '2',
   },
   {
     skillName: 'mysql',
     path: '/skills/mysql.svg',
+    level: '2',
   },
   {
     skillName: 'nodejs',
     path: '/skills/nodejs.svg',
+    level: '1',
   },
   {
     skillName: 'postman',
     path: '/skills/postman.svg',
+    level: '2',
   },
   {
     skillName: 'postgress',
     path: '/skills/pgsql.svg',
+    level: '2',
   },
   {
     skillName: 'supabase',
     path: '/skills/supabase.svg',
+    level: '1',
   },
   {
     skillName: 'git',
     path: '/skills/git.svg',
+    level: '2',
   },
   {
     skillName: 'vs-Code',
     path: '/skills/vs-code.svg',
+    level: '2',
   },
 ];
