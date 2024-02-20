@@ -1,3 +1,5 @@
+import Button from '../components/Button';
+
 function Homepage() {
   return (
     <section className="m-5 mt-10">
@@ -22,9 +24,7 @@ function Homepage() {
               with an experience in Fullstack engineering.
             </span>
           </p>
-          <button className="bg-primary w-full rounded-lg px-6 py-3 font-semibold text-white shadow-lg duration-100  ease-out hover:-translate-y-2  hover:shadow-white active:translate-y-0  active:shadow-none sm:w-fit">
-            Download CV
-          </button>
+          <Button>Download CV</Button>
         </div>
       </div>
     </section>
