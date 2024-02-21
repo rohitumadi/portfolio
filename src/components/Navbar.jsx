@@ -22,22 +22,24 @@ function Navbar() {
     <nav className=" sticky  top-0 z-10">
       <div className="bg-background container   mx-auto flex  justify-end   sm:items-center sm:bg-transparent sm:px-4 sm:py-2 sm:backdrop-blur-md">
         <NavLink
+          onClick={handleCloseMenu}
           className="font-signature ml-5 mr-auto mt-2 text-3xl  text-white sm:m-0 sm:text-4xl"
           to="homepage"
         >
           Rohit
         </NavLink>
         <ul
-          onClick={handleCloseMenu}
           className={`bg-background absolute m-auto  h-fit pb-6  transition-all duration-300 ease-in  sm:h-fit sm:bg-transparent sm:pb-0 ${isOpen ? 'top-10 ' : ' top-[-500px]'}  flex  w-full flex-col items-center  gap-5 sm:static sm:m-0 sm:mt-0 sm:w-full sm:flex-row  sm:justify-center  sm:px-2`}
         >
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : navLink)}
+            onClick={handleCloseMenu}
             to="homepage"
           >
             Home
           </NavLink>
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="skills"
           >
@@ -45,6 +47,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="projects"
           >
@@ -52,6 +55,7 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="contact"
           >
@@ -59,12 +63,14 @@ function Navbar() {
           </NavLink>
 
           <NavLink
+            onClick={handleCloseMenu}
             className={({ isActive }) => (isActive ? activeClass : navLink)}
             to="experience"
           >
             Experience
           </NavLink>
           <NavLink
+            onClick={handleCloseMenu}
             to="https://github.com/rohitumadi"
             className="block text-lg sm:ml-auto sm:hidden  sm:text-xl"
             target="_blank"
@@ -73,6 +79,7 @@ function Navbar() {
           </NavLink>
         </ul>
         <NavLink
+          onClick={handleCloseMenu}
           to="https://github.com/rohitumadi"
           className="hidden text-lg sm:ml-auto sm:block  sm:text-xl"
           target="_blank"

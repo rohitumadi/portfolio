@@ -103,6 +103,16 @@ export const skills = [
     level: '0',
   },
   {
+    skillName: 'docker',
+    path: '/skills/docker.svg',
+    level: '0',
+  },
+  {
+    skillName: 'kubernetes',
+    path: '/skills/kubernetes.svg',
+    level: '0',
+  },
+  {
     skillName: 'spring boot',
     path: '/skills/spring-boot.svg',
     level: '0',
