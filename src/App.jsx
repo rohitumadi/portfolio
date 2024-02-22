@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
 import Homepage from './pages/Homepage';
 import PageNotFound from './pages/PageNotFound';
@@ -10,7 +10,7 @@ import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Navigate to="homepage" replace />} />
@@ -40,7 +40,7 @@ function App() {
           },
         }}
       />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
