@@ -4,7 +4,7 @@ export const projects = [
     title: 'usePopcorn',
     description:
       'A react project built in order to learn the use of hooks from the react course of Jonas Schmedtmann',
-    img: '/projects/p1.png',
+    img: 'projects/p1.png',
     tags: ['React Js'],
 
     liveLink: 'https://rohitumadi.github.io/usePopcorn/',
@@ -15,7 +15,7 @@ export const projects = [
     title: 'Fast React Pizza',
     description:
       'A react project built in order to learn the use of react router with data loading ,advanced react router and tailwind css from the react course of Jonas Schmedtmann',
-    img: '/projects/p2.png',
+    img: 'projects/p2.png',
     tags: ['React Js', 'Tailwind CSS'],
 
     liveLink: 'https://rohitumadi.github.io/fast-react-pizza/',
@@ -26,7 +26,7 @@ export const projects = [
     title: 'Technical News',
     description:
       'A react app that allows user to search for technical news with pagination',
-    img: '/projects/p3.png',
+    img: 'projects/p3.png',
     tags: ['React Js'],
 
     liveLink: 'https://rohitumadi.github.io/technical-news/',
@@ -37,7 +37,7 @@ export const projects = [
     title: 'E-commerce website',
     description:
       'Implemented to learn CSS in depth.created using HTML,CSS and a little bit of JAVASCRIPT with the help of youtube channel "Tech 2 etc".',
-    img: '/projects/p4.png',
+    img: 'projects/p4.png',
     tags: ['HTML', 'CSS'],
 
     liveLink: 'https://rohitumadi.github.io/E-commerce-website-2/',
@@ -48,7 +48,7 @@ export const projects = [
     title: 'Mapty',
     description:
       'Implemented to learn JS from the JS course of Jonas Schmedtmann',
-    img: '/projects/p5.png',
+    img: 'projects/p5.png',
     tags: ['HTML', 'CSS', 'JS'],
 
     liveLink: 'https://rohitumadi.github.io/mapty/',
@@ -59,102 +59,102 @@ export const projects = [
 export const skills = [
   {
     skillName: 'react',
-    path: '/skills/react.svg',
+    path: 'skills/react.svg',
     level: '2',
   },
   {
     skillName: 'javascript',
-    path: '/skills/javascript.svg',
+    path: 'skills/javascript.svg',
     level: '2',
   },
   {
     skillName: 'HTML',
-    path: '/skills/html.svg',
+    path: 'skills/html.svg',
     level: '2',
   },
   {
     skillName: 'CSS',
-    path: '/skills/css.svg',
+    path: 'skills/css.svg',
     level: '2',
   },
   {
     skillName: 'Tailwind CSS',
-    path: '/skills/tailwind.svg',
+    path: 'skills/tailwind.svg',
     level: '2',
   },
   {
     skillName: 'Redux',
-    path: '/skills/redux.svg',
+    path: 'skills/redux.svg',
     level: '1',
   },
   {
     skillName: 'Mongo DB',
-    path: '/skills/mongodb.svg',
+    path: 'skills/mongodb.svg',
     level: '2',
   },
   {
     skillName: 'python',
-    path: '/skills/python.svg',
+    path: 'skills/python.svg',
     level: '1',
   },
   {
     skillName: 'java',
-    path: '/skills/java.svg',
+    path: 'skills/java.svg',
     level: '0',
   },
   {
     skillName: 'docker',
-    path: '/skills/docker.svg',
+    path: 'skills/docker.svg',
     level: '0',
   },
   {
     skillName: 'kubernetes',
-    path: '/skills/kubernetes.svg',
+    path: 'skills/kubernetes.svg',
     level: '0',
   },
   {
     skillName: 'spring boot',
-    path: '/skills/spring-boot.svg',
+    path: 'skills/spring-boot.svg',
     level: '0',
   },
   {
     skillName: 'github',
-    path: '/skills/github.svg',
+    path: 'skills/github.svg',
     level: '2',
   },
   {
     skillName: 'mysql',
-    path: '/skills/mysql.svg',
+    path: 'skills/mysql.svg',
     level: '2',
   },
   {
     skillName: 'nodejs',
-    path: '/skills/nodejs.svg',
+    path: 'skills/nodejs.svg',
     level: '1',
   },
   {
     skillName: 'postman',
-    path: '/skills/postman.svg',
+    path: 'skills/postman.svg',
     level: '2',
   },
   {
     skillName: 'postgress',
-    path: '/skills/pgsql.svg',
+    path: 'skills/pgsql.svg',
     level: '2',
   },
   {
     skillName: 'supabase',
-    path: '/skills/supabase.svg',
+    path: 'skills/supabase.svg',
     level: '1',
   },
   {
     skillName: 'git',
-    path: '/skills/git.svg',
+    path: 'skills/git.svg',
     level: '2',
   },
   {
     skillName: 'vs-Code',
-    path: '/skills/vs-code.svg',
+    path: 'skills/vs-code.svg',
     level: '2',
   },
 ];

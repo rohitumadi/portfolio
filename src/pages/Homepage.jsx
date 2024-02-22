@@ -7,7 +7,7 @@ function Homepage() {
         <div className="col-span-1 mt-5  justify-self-center  sm:order-last md:mt-0">
           <div className=" border-primary flex h-[400px] w-[400px] items-center justify-center  rounded-full border-2 bg-transparent lg:h-[455px] lg:w-[450px]    ">
             <img
-              src="/ru.png"
+              src="ru.png"
               width={400}
               height={400}
               className=" rounded-full  lg:h-[450px] lg:w-[450px]"
@@ -24,7 +24,11 @@ function Homepage() {
               with an experience in Fullstack engineering.
             </span>
           </p>
-          <Button>Download CV</Button>
+          <Button>
+            <a target="_blank" href="Rohit's Resume.pdf">
+              Download CV
+            </a>
+          </Button>
         </div>
       </div>
     </section>

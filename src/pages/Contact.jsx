@@ -3,6 +3,7 @@ import Heading from '../components/Heading';
 import emailjs from '@emailjs/browser';
 import Button from '../components/Button';
 import { useForm } from 'react-hook-form';
+import { IoWarningOutline } from 'react-icons/io5';
 import toast from 'react-hot-toast';
 const inputStyle =
   'border-primary focus:border-white w-60 py-0.5 px-2 focus:outline-none rounded-sm border bg-transparent';
@@ -15,19 +16,23 @@ function Contact() {
 
   const sendEmail = (data) => {
     setIsSending(true);
-    emailjs
-      .sendForm('service_sojibiw', 'template_spabzzp', form.current, {
-        publicKey: 'B6gcQ2lDYLr05dzrV',
-      })
-      .then(
-        () => {
-          toast.success('Message sent successfully');
-        },
-        (error) => {
-          toast.error('There was an error sending the message', error.text);
-        },
-      )
-      .finally(() => setIsSending(false));
+    setTimeout(() => {
+      setIsSending(false);
+      toast.success('Message sent successfully');
+    }, 3000); // 3000 milliseconds = 3 seconds
+    // emailjs
+    //   .sendForm('', '', form.current, {
+    //     publicKey: '',
+    //   })
+    //   .then(
+    //     () => {
+    //       toast.success('Message sent successfully');
+    //     },
+    //     (error) => {
+    //       toast.error('There was an error sending the message', error.text);
+    //     },
+    //   )
+    //   .finally(() => setIsSending(false));
   };
   return (
     <>
@@ -111,13 +116,14 @@ function Contact() {
           >
             Send
           </button> */}
-          <Button width="w-60">
-            <svg
-              className="... mr-3 h-5 w-5 animate-spin "
-              viewBox="0 0 24 24"
-            ></svg>
+          <Button isLoading={isSending} width="w-60">
             {isSending ? 'Sending' : 'Send'}
           </Button>
+          <p className="w-60 text-xs text-yellow-300">
+            <IoWarningOutline size={18} className="inline-block" />
+            The send email feature is disabled for spamming purpose but you can
+            still hit the send button to see the simulation
+          </p>
         </form>
       </div>
     </>

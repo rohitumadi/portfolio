@@ -4,7 +4,7 @@ function Experience() {
   return (
     <>
       <Heading title="Experience" />
-      <section className="mt-5 flex h-full items-end justify-center text-white">
+      <section className="mt-5 flex h-full items-end justify-center px-3 text-white">
         <ul className="timeline timeline-snap-icon timeline-vertical ">
           <li>
             <hr />
@@ -28,12 +28,17 @@ function Experience() {
                 <img
                   width={48}
                   className="mr-3 inline-block"
-                  src="/hsbc.svg"
+                  src="hsbc.svg"
                   alt=""
                 />
                 HSBC Technologies
               </div>
               Got promoted to Software Engineer
+              <p className=" text-sm">
+                Supported containerization efforts using Docker and aided in the
+                deployment orchestration with Kubernetes, acquiring foundational
+                knowledge in modern DevOps practices.
+              </p>
             </div>
             <hr className="bg-primary" />
           </li>
@@ -59,12 +64,18 @@ function Experience() {
                 <img
                   width={48}
                   className="mr-3 inline-block "
-                  src="/hsbc.svg"
+                  src="hsbc.svg"
                   alt=""
                 />
                 HSBC Technologies
               </div>
               Joined HTI as a Trainee Software Engineer
+              <p className=" text-sm">
+                Contributed to the development of microservices architecture
+                using Spring Boot framework under supervision, gaining practical
+                experience in software engineering principles and best
+                practices.
+              </p>
             </div>
           </li>
         </ul>
