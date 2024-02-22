@@ -16,20 +16,20 @@ function Navbar() {
   }
   function handleCloseMenu() {
     setIsOpen(false);
-    setIsChecked((check) => !check);
+    if (isChecked) setIsChecked((check) => !check);
   }
   return (
     <nav className=" sticky  top-0 z-10">
-      <div className="bg-background container   mx-auto flex  justify-end   sm:items-center sm:bg-transparent sm:px-4 sm:py-2 sm:backdrop-blur-md">
+      <div className="container mx-auto   flex justify-end  bg-background   sm:items-center sm:bg-transparent sm:px-4 sm:py-2 sm:backdrop-blur-md">
         <NavLink
           onClick={handleCloseMenu}
-          className="font-signature ml-5 mr-auto mt-2 text-3xl  text-white sm:m-0 sm:text-4xl"
+          className="ml-5 mr-auto mt-2 font-signature text-3xl  text-white sm:m-0 sm:text-4xl"
           to="homepage"
         >
           Rohit
         </NavLink>
         <ul
-          className={`bg-background absolute m-auto  h-fit pb-6  transition-all duration-300 ease-in  sm:h-fit sm:bg-transparent sm:pb-0 ${isOpen ? 'top-10 ' : ' top-[-500px]'}  flex  w-full flex-col items-center  gap-5 sm:static sm:m-0 sm:mt-0 sm:w-full sm:flex-row  sm:justify-center  sm:px-2`}
+          className={`absolute m-auto h-fit  bg-background pb-6  transition-all duration-300 ease-in  sm:h-fit sm:bg-transparent sm:pb-0 ${isOpen ? 'top-10 ' : ' top-[-500px]'}  flex  w-full flex-col items-center  gap-5 sm:static sm:m-0 sm:mt-0 sm:w-full sm:flex-row  sm:justify-center  sm:px-2`}
         >
           <NavLink
             className={({ isActive }) => (isActive ? activeClass : navLink)}
