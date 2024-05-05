@@ -5,7 +5,7 @@ function Card({ projectData }) {
   const { img, title, description, tags, gitLink, liveLink } = projectData;
 
   return (
-    <div className="hover:shadow-primary border-primary  w-64  rounded-xl border shadow-lg transition-all duration-500  hover:-translate-y-5">
+    <div className="w-64 rounded-xl  border  border-primary shadow-lg transition-all duration-500 hover:-translate-y-5  hover:shadow-primary">
       <div className="flex h-full flex-col gap-3 p-5 text-white">
         <div className="overflow-hidden rounded-xl ">
           <img src={img} alt="" />

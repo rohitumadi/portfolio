@@ -1,6 +1,17 @@
 export const projects = [
   {
     id: 1,
+    title: 'Spotify Clone',
+    description:
+      'A spotify clone built using next js with the help of youtube channel code with antonio',
+    img: 'projects/p6.png',
+    tags: ['Next Js', 'Supabase', 'Type Script'],
+
+    liveLink: 'https://spotify-clone-psi-black-85.vercel.app/',
+    gitLink: 'https://github.com/rohitumadi/spotify-clone',
+  },
+  {
+    id: 1,
     title: 'usePopcorn',
     description:
       'A react project built in order to learn the use of hooks from the react course of Jonas Schmedtmann',
@@ -57,6 +68,16 @@ export const projects = [
 ];
 
 export const skills = [
+  {
+    skillName: 'next js',
+    path: 'skills/next-js.svg',
+    level: '2',
+  },
+  {
+    skillName: 'Type Script',
+    path: 'skills/typescript.svg',
+    level: '2',
+  },
   {
     skillName: 'react',
     path: 'skills/react.svg',
@@ -145,7 +166,7 @@ export const skills = [
   {
     skillName: 'supabase',
     path: 'skills/supabase.svg',
-    level: '1',
+    level: '2',
   },
   {
     skillName: 'git',
