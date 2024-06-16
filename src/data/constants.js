@@ -11,6 +11,16 @@ export const projects = [
     gitLink: 'https://github.com/rohitumadi/spotify-clone',
   },
   {
+    id: 2,
+    title: 'Twitter Clone',
+    description: 'A Twitter clone built using next js',
+    img: 'projects/p7.png',
+    tags: ['Next Js', 'MongoDB', 'Type Script'],
+
+    liveLink: 'https://twitter-clone-u61t.vercel.app/',
+    gitLink: 'https://github.com/rohitumadi/twitter-clone',
+  },
+  {
     id: 1,
     title: 'usePopcorn',
     description:
