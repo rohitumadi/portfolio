@@ -49,7 +49,7 @@ function Contact() {
             <input
               placeholder="Your name"
               type="text"
-              {...register('name', {
+              {...register('user_name', {
                 required: 'This field is required',
                 pattern: {
                   value: /^[a-zA-Z]+( [a-zA-Z]+)?$/,
@@ -78,7 +78,7 @@ function Contact() {
           <div className="relative flex flex-col gap-2">
             <input
               placeholder="Your email"
-              {...register('email', {
+              {...register('user_email', {
                 required: 'This field is required',
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
