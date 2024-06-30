@@ -1,10 +1,9 @@
-import { useRef, useState } from 'react';
-import Heading from '../components/Heading';
 import emailjs from '@emailjs/browser';
-import Button from '../components/Button';
+import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { IoWarningOutline } from 'react-icons/io5';
 import toast from 'react-hot-toast';
+import Button from '../components/Button';
+import Heading from '../components/Heading';
 const inputStyle =
   'border-primary focus:border-white w-60 py-0.5 px-2 focus:outline-none rounded-sm border bg-transparent';
 
@@ -16,23 +15,26 @@ function Contact() {
 
   const sendEmail = (data) => {
     setIsSending(true);
-    setTimeout(() => {
-      setIsSending(false);
-      toast.success('Message sent successfully');
-    }, 3000); // 3000 milliseconds = 3 seconds
-    // emailjs
-    //   .sendForm('', '', form.current, {
-    //     publicKey: '',
-    //   })
-    //   .then(
-    //     () => {
-    //       toast.success('Message sent successfully');
-    //     },
-    //     (error) => {
-    //       toast.error('There was an error sending the message', error.text);
-    //     },
-    //   )
-    //   .finally(() => setIsSending(false));
+    // setTimeout(() => {
+    //   setIsSending(false);
+    //   toast.success('Message sent successfully');
+    // }, 3000); // 3000 milliseconds = 3 seconds
+    emailjs
+      .sendForm('service_t76uwcu', 'template_spabzzp', form.current, {
+        publicKey: 'B6gcQ2lDYLr05dzrV',
+      })
+      .then(
+        () => {
+          toast.success('Message sent successfully');
+        },
+        (error) => {
+          toast.error('There was an error sending the message', error.text);
+        },
+      )
+      .finally(() => {
+        setIsSending(false);
+        form.current.reset();
+      });
   };
   return (
     <>
@@ -41,7 +43,7 @@ function Contact() {
         <form
           ref={form}
           onSubmit={handleSubmit(sendEmail)}
-          className="shadow-primary border-primary mt-4  flex h-3/4 w-4/5 flex-col items-center justify-center gap-5 rounded-md border bg-transparent p-5 text-white shadow-lg lg:w-1/3"
+          className="mt-4 flex h-3/4  w-4/5 flex-col items-center justify-center gap-5 rounded-md border border-primary bg-transparent p-5 text-white shadow-lg shadow-primary lg:w-1/3"
         >
           <div className="flex flex-col items-center  gap-2">
             <input
@@ -64,7 +66,7 @@ function Contact() {
                   message: 'Max characters reached',
                 },
               })}
-              name="name"
+              name="user_name"
               className={inputStyle}
             />
             {errors?.name?.message && (
@@ -84,7 +86,7 @@ function Contact() {
                 },
               })}
               type="email"
-              name="email"
+              name="user_email"
               className={inputStyle}
             />
 
@@ -119,11 +121,6 @@ function Contact() {
           <Button isLoading={isSending} width="w-60">
             {isSending ? 'Sending' : 'Send'}
           </Button>
-          <p className="w-60 text-xs text-yellow-300">
-            <IoWarningOutline size={18} className="inline-block" />
-            The send email feature is disabled for spamming purpose but you can
-            still hit the send button to see the simulation
-          </p>
         </form>
       </div>
     </>

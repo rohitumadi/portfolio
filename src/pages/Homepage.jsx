@@ -1,3 +1,7 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
+
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 
 function Homepage() {
@@ -5,13 +9,24 @@ function Homepage() {
     <section className="m-5 mt-10">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-10 lg:gap-0  ">
         <div className="col-span-1 mt-5  justify-self-center  sm:order-last md:mt-0">
-          <div className=" border-primary flex h-[400px] w-[400px] items-center justify-center  rounded-full border-2 bg-transparent lg:h-[455px] lg:w-[450px]    ">
+          <div className=" flex h-[400px] w-[400px] items-center justify-center rounded-full  border-2 border-primary bg-transparent lg:h-[455px] lg:w-[450px]    ">
             <img
               src="ru.png"
               width={400}
               height={400}
               className=" rounded-full  lg:h-[450px] lg:w-[450px]"
             />
+          </div>
+          <div className="mt-5 flex items-center justify-center gap-3">
+            <Link target="_blank" to="https://www.linkedin.com/in/rumadi">
+              <FaLinkedin color="#1DA1F2" size={30} />
+            </Link>
+            <Link target="_blank" to="https://github.com/rohitumadi">
+              <FaGithub color="#fff" size={30} />
+            </Link>
+            <Link target="_blank" to="https://twitter.com/rohitumadi2000">
+              <FaSquareXTwitter color="#1DA1F2" size={30} />
+            </Link>
           </div>
         </div>
         <div className="col-span-1  place-self-center text-center sm:text-left">
