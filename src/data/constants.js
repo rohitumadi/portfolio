@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 1,
+    id: 8,
     title: 'Spotify Clone',
     description:
       'A spotify clone built using next js with the help of youtube channel code with antonio',
@@ -11,7 +11,7 @@ export const projects = [
     gitLink: 'https://github.com/rohitumadi/spotify-clone',
   },
   {
-    id: 2,
+    id: 7,
     title: 'Twitter Clone',
     description: 'A Twitter clone built using next js',
     img: 'projects/p7.png',
@@ -21,7 +21,18 @@ export const projects = [
     gitLink: 'https://github.com/rohitumadi/twitter-clone',
   },
   {
-    id: 1,
+    id: 6,
+    title: 'React Shopping Cart',
+    description:
+      'A simple react shopping cart with context api and useReducer hook',
+    img: 'projects/p8.png',
+    tags: ['React Js'],
+
+    liveLink: 'https://rohitumadi.github.io/react-shopping-cart/',
+    gitLink: 'https://github.com/rohitumadi/react-shopping-cart',
+  },
+  {
+    id: 5,
     title: 'usePopcorn',
     description:
       'A react project built in order to learn the use of hooks from the react course of Jonas Schmedtmann',
@@ -32,7 +43,7 @@ export const projects = [
     gitLink: 'https://github.com/rohitumadi/usePopcorn',
   },
   {
-    id: 2,
+    id: 4,
     title: 'Fast React Pizza',
     description:
       'A react project built in order to learn the use of react router with data loading ,advanced react router and tailwind css from the react course of Jonas Schmedtmann',
@@ -54,7 +65,7 @@ export const projects = [
     gitLink: 'https://github.com/rohitumadi/technical-news',
   },
   {
-    id: 4,
+    id: 2,
     title: 'E-commerce website',
     description:
       'Implemented to learn CSS in depth.created using HTML,CSS and a little bit of JAVASCRIPT with the help of youtube channel "Tech 2 etc".',
@@ -65,7 +76,7 @@ export const projects = [
     gitLink: 'https://github.com/rohitumadi/E-commerce-website-2',
   },
   {
-    id: 5,
+    id: 1,
     title: 'Mapty',
     description:
       'Implemented to learn JS from the JS course of Jonas Schmedtmann',
