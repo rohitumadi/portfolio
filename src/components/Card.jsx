@@ -5,22 +5,28 @@ function Card({ projectData }) {
   const { img, title, description, tags, gitLink, liveLink } = projectData;
 
   return (
-    <div className="w-64 rounded-xl  border  border-primary shadow-lg transition-all duration-500 hover:-translate-y-5  hover:shadow-primary">
-      <div className="flex h-full flex-col gap-3 p-5 text-white">
-        <div className="overflow-hidden rounded-xl ">
-          <img src={img} alt="" />
-        </div>
-        <h5 className="text-lg font-medium  md:text-xl">{title}</h5>
-        <div className=" flex gap-2 ">
+    <div className="card w-64 border-2 border-primary bg-base-100  shadow-xl transition-all  duration-500 hover:-translate-y-5 hover:shadow-primary sm:w-80">
+      <figure>
+        <img src={img} alt="" />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title text-white">
+          {title}
+          {/* <div className="badge badge-secondary">NEW</div> */}
+        </h2>
+        <p>{description}</p>
+        <div className="card-actions ">
           {tags.map((tag) => (
-            <Tags tag={tag} key={tag} />
+            <div key={tag} className="badge badge-outline">
+              {tag}
+            </div>
           ))}
         </div>
-        <p className=" text-sm">{description}</p>
         <div className="mt-auto flex justify-center gap-4 ">
           <Link target="_blank" className="hover:text-primary" to={liveLink}>
             <FaLink />
           </Link>
+
           <Link target="_blank" className="hover:text-primary" to={gitLink}>
             <FaCodeBranch />
           </Link>

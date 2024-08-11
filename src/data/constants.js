@@ -15,7 +15,7 @@ export const projects = [
     title: 'Twitter Clone',
     description: 'A Twitter clone built using next js',
     img: 'projects/p7.png',
-    tags: ['Next Js', 'MongoDB', 'Type Script'],
+    tags: ['Next Js', 'MongoDB', 'Type Script', 'Uploadthing Js'],
 
     liveLink: 'https://twitter-clone-u61t.vercel.app/',
     gitLink: 'https://github.com/rohitumadi/twitter-clone',
