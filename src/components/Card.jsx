@@ -23,11 +23,21 @@ function Card({ projectData }) {
           ))}
         </div>
         <div className="mt-auto flex justify-center gap-4 ">
-          <Link target="_blank" className="hover:text-primary" to={liveLink}>
+          <Link
+            target="_blank"
+            className="tooltip hover:text-primary"
+            data-tip="Live Link"
+            to={liveLink}
+          >
             <FaLink />
           </Link>
 
-          <Link target="_blank" className="hover:text-primary" to={gitLink}>
+          <Link
+            target="_blank"
+            className="tooltip hover:text-primary"
+            data-tip="Git Link"
+            to={gitLink}
+          >
             <FaCodeBranch />
           </Link>
         </div>

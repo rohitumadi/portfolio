@@ -1,5 +1,16 @@
 export const projects = [
   {
+    id: 9,
+    title: 'Next Js Chat App',
+    description:
+      'A  real time chat app built using next js with the help of youtube channel Code Complete ',
+    img: 'projects/p9.png',
+    tags: ['Next Js', 'Convex DB', 'Type Script'],
+
+    liveLink: 'https://nextjs-chat-app-taupe.vercel.app/',
+    gitLink: 'https://github.com/rohitumadi/nextjs-chat-app',
+  },
+  {
     id: 8,
     title: 'Spotify Clone',
     description:
